@@ -1,0 +1,50 @@
+Here are the **setup instructions** for running **HALOS Version 3 – Multimodal Assistant (Text + Voice + Drawing + Memory)**:
+
+---
+
+### ✅ Requirements
+
+You’ll need:
+
+* Python 3.8+
+* A working microphone
+* An OpenAI API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys))
+
+---
+
+### 📦 Install Dependencies
+
+Run the following in your terminal or command prompt:
+
+```bash
+pip install openai python-dotenv pyttsx3 SpeechRecognition pillow sentence-transformers
+```
+
+> **Note:** You may also need to install PortAudio (required for `pyaudio`, used by `SpeechRecognition`):
+
+* **macOS:** `brew install portaudio`
+* **Linux:** `sudo apt install portaudio19-dev`
+* **Windows:** Use a pre-built PyAudio wheel if needed.
+
+---
+
+### 🔐 Configure Your API Key
+
+Create a file named `.env` in the same directory as the Python script and add this line:
+
+```
+OPENAI_API_KEY=your_openai_key_here
+```
+
+Replace `your_openai_key_here` with your actual OpenAI API key.
+
+---
+
+### ▶️ Run the Program
+
+```bash
+python halos_v3.py
+```
+
+---
+

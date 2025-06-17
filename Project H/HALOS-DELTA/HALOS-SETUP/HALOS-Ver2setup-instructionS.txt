@@ -1,0 +1,52 @@
+Here are the **setup instructions** for running **HALOS Version 2 – GPT + Voice Assistant**:
+
+---
+
+### ✅ 1. Requirements
+
+You need to have:
+
+* Python 3.8 or later
+* An OpenAI API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys))
+* A working microphone
+
+---
+
+### 📦 2. Install Dependencies
+
+Open your terminal and run:
+
+```bash
+pip install openai python-dotenv pyttsx3 SpeechRecognition pyaudio
+```
+
+> **Note:** On some systems, you may also need to install PortAudio:
+
+* **macOS:** `brew install portaudio`
+* **Ubuntu:** `sudo apt install portaudio19-dev`
+* **Windows:** Use pre-built `pyaudio` wheels if install fails.
+
+---
+
+### 🔐 3. Add Your API Key
+
+Create a file named `.env` in the same directory and add this line:
+
+```env
+OPENAI_API_KEY=your_openai_key_here
+```
+
+Replace `your_openai_key_here` with your actual API key.
+
+---
+
+### ▶️ 4. Run the Program
+
+Start the assistant with:
+
+```bash
+python halos_v2.py
+```
+
+---
+

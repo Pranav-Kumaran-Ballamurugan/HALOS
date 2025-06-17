@@ -1,0 +1,35 @@
+ 1. Requirements
+Python 3.8+
+
+An OpenAI API key (you must have a billing-enabled account)
+
+(Optional) Virtual environment
+
+📦 2. Install Dependencies
+Open a terminal and run:
+
+bash
+Copy
+Edit
+pip install openai python-dotenv
+🔐 3. Set Up Environment Variables
+Create a file called .env in the same directory as your Python script and add:
+
+env
+Copy
+Edit
+OPENAI_API_KEY=your_openai_api_key_here
+Replace your_openai_api_key_here with your actual OpenAI key from https://platform.openai.com/account/api-keys
+
+▶️ 4. Run the App
+In the same directory, run:
+
+bash
+Copy
+Edit
+python halos_v1.py
+🧠 How It Works
+Uses tkinter to create a basic GUI
+
+Takes your question, sends it to OpenAI GPT-3.5, and displays the response
+
