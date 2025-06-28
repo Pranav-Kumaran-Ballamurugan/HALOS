@@ -1,0 +1,28 @@
+halos/
+├── halos/                  # Core package
+│   ├── core/               # Main system components
+│   │   ├── __init__.py
+│   │   ├── halos_core.py   # HALOSCore implementation
+│   │   ├── llm_orchestrator.py
+│   │   ├── security_suite.py
+│   │   └── ... (other core modules)
+│   │
+│   ├── gui/                # Tkinter/PyQt interface
+│   │   ├── __init__.py
+│   │   ├── main_window.py
+│   │   ├── tabs/           # Individual tab implementations
+│   │   └── themes/         # UI themes
+│   │
+│   ├── api/                # REST API server
+│   ├── cli/                # Command-line interface
+│   └── __init__.py
+│
+├── configs/                # Configuration files
+├── data/                   # Local data storage
+├── docs/                   # Documentation
+├── tests/                  # Unit/integration tests
+├── Dockerfile              # Containerization
+├── pyproject.toml          # Build configuration
+├── requirements.txt        # Dependencies
+├── README.md               # Installation/usage guide
+└── halos-launcher.py       # Entry point script
