@@ -1,0 +1,1 @@
+pip install matrix-nio[end-to-end-encryption]

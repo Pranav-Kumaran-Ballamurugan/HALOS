@@ -1,0 +1,22 @@
+
+### .env.example
+
+```ini
+# LLM Providers
+OPENAI_API_KEY=
+ANTHROPIC_API_KEY=
+GEMINI_API_KEY=
+
+# Payment Processors
+STRIPE_API_KEY=
+UPI_API_KEY=
+
+# Other Services
+PLAID_CLIENT_ID=
+PLAID_SECRET=
+FIREBASE_CREDENTIALS=
+
+# System Configuration
+DARK_MODE=False
+DEFAULT_CURRENCY=USD
+ENABLE_CLOUD_SYNC=False

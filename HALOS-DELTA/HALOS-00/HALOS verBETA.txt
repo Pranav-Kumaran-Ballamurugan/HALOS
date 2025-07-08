@@ -1,0 +1,19 @@
+import datetime
+import webbrowser
+
+def respond_to_command(user_input):
+    if "time" in user_input.lower():
+        now = datetime.datetime.now()
+        return f"The time is {now.strftime('%H:%M')}."
+    elif "open" in user_input.lower() and "google" in user_input.lower():
+        webbrowser.open("https://google.com")
+        return "Opening Google..."
+    else:
+        return "Sorry, I didn’t understand that."
+
+while True:
+    user_input = input("You: ")
+    if user_input.lower() in ["exit", "quit"]:
+        break
+    response = respond_to_command(user_input)
+    print("HALOS:", response)

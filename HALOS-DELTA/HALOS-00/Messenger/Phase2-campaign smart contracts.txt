@@ -1,0 +1,39 @@
+// contracts/Campaign.sol
+pragma solidity ^0.8.0;
+
+contract HALOSCampaign {
+    struct Participant {
+        address wallet;
+        uint256 committed;
+        bool paid;
+    }
+    
+    Participant[] public participants;
+    uint256 public goal;
+    bool public locked;
+    
+    constructor(uint256 _goal, address[] memory _members) {
+        goal = _goal;
+        for (uint i=0; i<_members.length; i++) {
+            participants.push(Participant(_members[i], 0, false));
+        }
+    }
+    
+    function commit(uint256 amount) external {
+        require(!locked, "Campaign locked");
+        for (uint i=0; i<participants.length; i++) {
+            if (participants[i].wallet == msg.sender) {
+                participants[i].committed = amount;
+            }
+        }
+    }
+    
+    function lock() external {
+        uint256 total;
+        for (uint i=0; i<participants.length; i++) {
+            total += participants[i].committed;
+        }
+        require(total >= goal, "Goal not met");
+        locked = true;
+    }
+}

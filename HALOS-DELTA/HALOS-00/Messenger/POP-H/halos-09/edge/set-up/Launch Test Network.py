@@ -1,0 +1,1 @@
+python -m halos.testnet --features mpc,ephemeral,voice

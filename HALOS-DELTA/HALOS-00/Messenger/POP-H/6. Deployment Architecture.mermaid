@@ -1,0 +1,8 @@
+graph TD
+    A[Client] -->|E2E Encrypted| B(Matrix Homeserver)
+    B --> C[Key Server]
+    C --> D[Key Tree Storage]
+    A -->|Offline| E[Local SQLite]
+    E -->|Reconnect| B
+    A --> F[Media Proxy]
+    F --> G[Encrypted S3 Storage]

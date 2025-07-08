@@ -1,0 +1,68 @@
+halos/
+├── halos/                      # Main package directory
+│   ├── __init__.py             # Package initialization
+│   ├── core/                   # Core system components
+│   │   ├── __init__.py
+│   │   ├── system.py           # HALOSCore class
+│   │   ├── models.py           # Data models (Transaction, HALOSConfig, etc.)
+│   │   ├── enums.py            # All enumerations
+│   │   └── exceptions.py       # Custom exceptions
+│   ├── components/             # System components
+│   │   ├── __init__.py
+│   │   ├── finance/            # Financial components
+│   │   │   ├── __init__.py
+│   │   │   ├── processors.py   # Payment processors
+│   │   │   ├── analytics.py    # Finance analytics
+│   │   │   └── tracker.py      # FinanceTrackerPlus
+│   │   ├── llm/                # LLM components
+│   │   │   ├── __init__.py
+│   │   │   ├── orchestrator.py # LLMOrchestrator
+│   │   │   └── providers/      # LLM provider implementations
+│   │   │       ├── __init__.py
+│   │   │       ├── openai.py
+│   │   │       ├── anthropic.py
+│   │   │       └── gemini.py
+│   │   ├── security/           # Security components
+│   │   │   ├── __init__.py
+│   │   │   └── suite.py        # SecuritySuite
+│   │   ├── code/               # Code analysis
+│   │   │   ├── __init__.py
+│   │   │   └── doctor.py       # CodeDoctorPro
+│   │   └── ...                 # Other components
+│   ├── gui/                    # GUI components
+│   │   ├── __init__.py
+│   │   ├── app.py              # Main HALOSApp
+│   │   ├── tabs/               # Individual tab implementations
+│   │   │   ├── __init__.py
+│   │   │   ├── assistant.py
+│   │   │   ├── finance.py
+│   │   │   └── ...
+│   │   └── widgets/            # Custom widgets
+│   │       ├── __init__.py
+│   │       └── ...
+│   ├── utils/                  # Utility functions
+│   │   ├── __init__.py
+│   │   ├── logging.py          # Logging configuration
+│   │   └── helpers.py          # Helper functions
+│   └── services/               # Background services
+│       ├── __init__.py
+│       ├── notification.py     # Notification service
+│       └── ...
+├── tests/                      # Test suite
+│   ├── __init__.py
+│   ├── unit/
+│   └── integration/
+├── docs/                       # Documentation
+│   ├── conf.py
+│   ├── api.rst
+│   └── ...
+├── scripts/                    # Helper scripts
+│   ├── install_deps.py
+│   └── ...
+├── pyproject.toml              # Build system config
+├── setup.py                    # Legacy setup (if needed)
+├── requirements.txt            # Production dependencies
+├── requirements-dev.txt        # Development dependencies
+├── README.md                   # Project documentation
+├── LICENSE                     # License file
+└── .env.example                # Example environment config

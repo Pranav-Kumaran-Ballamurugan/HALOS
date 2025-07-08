@@ -1,0 +1,11 @@
+Immediate Next Steps
+Clone the starter repo:
+
+bash
+git clone https://github.com/halos-ai/messenger-starter
+Set up Matrix homeserver (or use Element for testing)
+
+Deploy test contract:
+
+bash
+npx hardhat deploy --network goerli

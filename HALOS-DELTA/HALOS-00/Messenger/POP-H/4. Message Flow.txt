@@ -1,0 +1,11 @@
+4. Message Flow
+Sending:
+
+python
+text = "Secret message"
+encrypted = fernet.encrypt(text.encode()).decode()
+await client.send_message(room_id, encrypted)
+Receiving:
+
+python
+decrypted = fernet.decrypt(encrypted.encode()).decode()
