@@ -1,0 +1,10 @@
+graph TD
+    A[HALOS Orchestrator] -->|HTTP| B[/checkcode]
+    A -->|WebSocket| C[/voice-command]
+    A -->|gRPC| D[/autofix]
+    B --> E[Code Analysis]
+    C --> F[STT Service]
+    D --> G[GPT-4 Engine]
+    E --> H[Security Scanner]
+    E --> I[Test Generator]
+    G --> J[AI Fix Suggester]
