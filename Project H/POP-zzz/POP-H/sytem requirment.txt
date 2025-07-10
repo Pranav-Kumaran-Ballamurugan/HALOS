@@ -1,4 +1,0 @@
-System Requirements
-Minimum: Python 3.9+, 4GB RAM
-
-Recommended: Python 3.10+, NVIDIA GPU (for Whisper/Vision), 8GB+ RAM
