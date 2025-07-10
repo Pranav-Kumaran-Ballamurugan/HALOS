@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: codedoctor
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: codedoctor
+  template:
+    spec:
+      containers:
+      - name: main
+        image: halos/codedoctor:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          limits:
+            nvidia.com/gpu: 1  # For STT
