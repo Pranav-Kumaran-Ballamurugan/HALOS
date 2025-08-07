@@ -11,7 +11,7 @@ import psutil
 from prometheus_client import Summary
 from typing import Optional, Any, List
 from typing import Optional
-def add_transaction(self, transaction: Transaction) -> int:
+def add_transaction(self, transaction: Transaction) -> int:    pass
 #======================
 # ENHANCED FINANCE TRACKER WITH SQLITE
 # ======================
