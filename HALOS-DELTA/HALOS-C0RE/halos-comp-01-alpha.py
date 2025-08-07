@@ -10,10 +10,10 @@ from matplotlib.figure import Figure
 import psutil
 from prometheus_client import Summary
 from typing import Optional, Any, List
+def add_translation(self,transaction:Transaction)->int:
 # ======================
 # ENHANCED FINANCE TRACKER WITH SQLITE
 # ======================
-
 class SecureSQLiteLedger:
     """Encrypted SQLite ledger for transaction persistence"""
     
