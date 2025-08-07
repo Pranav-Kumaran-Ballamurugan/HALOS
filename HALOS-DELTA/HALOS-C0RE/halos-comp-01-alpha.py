@@ -10,7 +10,12 @@ from matplotlib.figure import Figure
 import psutil
 from prometheus_client import Summary
 from typing import Optional, Any, List
-def add_translation(self,transaction:Transaction)->int:
+from typing import Optional
+def add_transaction(self, transaction: Transaction) -> int:
+
+def __init__(self, db_path: str = 'halos_finance.db', encryption_key: Optional[bytes] = None):
+    pass
+
 # ======================
 # ENHANCED FINANCE TRACKER WITH SQLITE
 # ======================
