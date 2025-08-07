@@ -12,16 +12,15 @@ from prometheus_client import Summary
 from typing import Optional, Any, List
 from typing import Optional
 def add_transaction(self, transaction: Transaction) -> int:
-
-def __init__(self, db_path: str = 'halos_finance.db', encryption_key: Optional[bytes] = None):
-    pass
-
-# ======================
+#======================
 # ENHANCED FINANCE TRACKER WITH SQLITE
 # ======================
 class SecureSQLiteLedger:
     """Encrypted SQLite ledger for transaction persistence"""
-    
+    class SecureSQLiteLedger:
+    def __init__(self, db_path: str = 'halos_finance.db', encryption_key: Optional[bytes] = None):
+        pass
+
     def __init__(self, db_path: str = 'halos_finance.db', encryption_key: Optional[bytes] = None):
         self.db_path = db_path
         self.encryption_key = encryption_key or Fernet.generate_key()
