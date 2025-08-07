@@ -9,7 +9,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolb
 from matplotlib.figure import Figure
 import psutil
 from prometheus_client import Summary
-
+from typing import Optional, Any, List
 # ======================
 # ENHANCED FINANCE TRACKER WITH SQLITE
 # ======================
